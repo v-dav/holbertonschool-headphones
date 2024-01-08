@@ -32,7 +32,6 @@ img {
 	/* Colors */
 	--color-white: #ffffff;
 	--color-black: #071629;
-	--color-background: #F2F2F2;
 	--color-red: #F26565;
 
 }
@@ -47,26 +46,62 @@ a {
 	text-decoration: none;
 }
 
-div {
-	background-color: #F26565;
+header, main, footer {
 	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
+	width: 100%;
+}
+
+/* ================= HEADER & NAVBAR ===================== */
+.header-container {
+	padding-top: 30px;
+}
+
+/* ================= SECTIONS ===================== */
+.header-container, .section-hero, .section-do, .section-results, .section-contact, .footer {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.section-hero {
+	background-image: url(../img/background-hero.png);
+	color: var(--color-white);
+}
+
+.section-do {
+
+}
+
+.section-results {
+	background-image: url(../img/background-results.png);
+	color: var(--color-white);
+}
+
+/* ================= FOOTER ===================== */
+.footer {
+	background-color: var(--color-black);
+	color: var(--color-white);
+	
 }
 
 /* ================= MEDIA QUERIES ===================== */
 
-/* Mobile first */
-@media screen and (max-width: 480px) {
-	
-}
-
 /* Tablet */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-	
+@media screen and (min-width: 481px) {
+	.header-container, .section-hero, .section-do, .section-results, .section-contact, .footer {
+		padding-left: 65px;
+		padding-right: 65px;
+	}
 }
 
 /* Desktop */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1000px) {
+	.header-container, .section-hero, .section-do, .section-results, .section-contact, .footer {
+		padding-left: 200px;
+		padding-right: 200px;
+	}
 	
+	header, main, footer {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
