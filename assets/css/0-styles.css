@@ -1,0 +1,72 @@
+/* ================= NORMALIZE CSS =============== */
+@import url(./normalize.css);
+
+/* ================= RESPONSIVE SETTINGS =============== */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* ================= FONTS ============================= */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@100;400;700&display=swap');
+
+
+/*================== VARIABLES ========================= */
+
+:root {
+	/* Fonts */
+	--main-font: "Source Sans 3", sans-serif;
+	--regular-font: 100;
+	--semibold-font: 400;
+	--bold-font: 700;
+
+	/* Interactions */
+	--links-hover-active-color: #FF6565;
+	--button-hover-active-opacity: 0.9;
+
+	/* Colors */
+	--color-white: #ffffff;
+	--color-black: #071629;
+	--color-background: #F2F2F2;
+	--color-red: #F26565;
+
+}
+
+/* ================= HELPERS =========================== */
+
+html {
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+div {
+	background-color: #F26565;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ================= MEDIA QUERIES ===================== */
+
+/* Mobile first */
+@media screen and (max-width: 480px) {
+	
+}
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	
+}
+
+/* Desktop */
+@media screen and (min-width: 769px) {
+	
+}
