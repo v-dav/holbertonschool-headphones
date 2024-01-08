@@ -39,5 +39,5 @@ Building a web page the right way is challenging, but it forms a crucial skill i
 
 ##  🙇 Authors
 
-- [Nicolas Philippot] - UI/UX Designer
+- Nicolas Philippot - UI/UX Designer
 - [Vladimir Davidov](https://github.com/v-dav) - Front-end implementation
