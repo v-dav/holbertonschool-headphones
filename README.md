@@ -3,6 +3,7 @@
 ![HTML](https://img.shields.io/badge/HTML-5-blue?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-3-blue?style=for-the-badge&logo=css3&logoColor=white)
 
+![image](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/63677b34-8c99-4b32-91ee-5bb730745355)
 
 ## 🧐 Project Overview
 
