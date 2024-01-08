@@ -37,7 +37,7 @@ Building a web page the right way is challenging, but it forms a crucial skill i
 ![implementation](https://github.com/v-dav/holbertonschool-web_front_end/assets/115344057/35b25a89-434d-452b-ab8c-639cae9e39f6)
 
 
-##  🙇 Author
+##  🙇 Authors
 
 - [Nicolas Philippot] - UI/UX Designer
 - [Vladimir Davidov](https://github.com/v-dav) - Front-end implementation
