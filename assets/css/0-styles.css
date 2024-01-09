@@ -52,6 +52,10 @@ header, main, footer {
 }
 
 /* ================= HEADER & NAVBAR ===================== */
+header {
+	position: relative;
+}
+
 .header-container {
 	padding-top: 30px;
 	width: 100%;
