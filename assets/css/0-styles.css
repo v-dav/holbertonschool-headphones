@@ -108,6 +108,7 @@ header, main, footer {
 .section-results {
 	background-image: url(../img/background-results.png);
 	color: var(--color-white);
+	background-position: 50% 40%;
 }
 
 .section-results .results-item.polygone {
@@ -172,5 +173,9 @@ header, main, footer {
 
 	.section-hero {
 		background-position: 50%;
+	}
+
+	.section-results {
+		background-size: 100%;
 	}
 }
