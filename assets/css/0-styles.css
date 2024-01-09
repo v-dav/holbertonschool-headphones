@@ -110,11 +110,35 @@ header, main, footer {
 	color: var(--color-white);
 }
 
+.section-results .results-item.polygone {
+	background-image: url(../img/Polygon.png);
+	background-repeat: no-repeat;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form form {
+	display: flex;
+	flex-direction: column;
+}
+
 /* ================= FOOTER ===================== */
 .footer {
 	background-color: var(--color-black);
 	color: var(--color-white);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	
+}
+
+.footer .logo-social .social {
+	display: flex;
+	justify-content: center;
 }
 
 /* ================= MEDIA QUERIES ===================== */
