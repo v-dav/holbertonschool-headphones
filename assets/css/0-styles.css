@@ -54,7 +54,30 @@ header, main, footer {
 /* ================= HEADER & NAVBAR ===================== */
 .header-container {
 	padding-top: 30px;
+	width: 100%;
 	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.header-logo {
+	margin-right: 130px;
+}
+
+.navbar-menu {
+	display: none;
+	flex: 1;
+}
+
+.menu-btn {
+	display: none;
+}
+
+.menu-icon {
+	cursor: pointer;
+	user-select: none;
 }
 
 .nav {
@@ -67,12 +90,44 @@ header, main, footer {
 }
 
 .navicon {
-	background: var(--color-black);
+	background: var(--color-white);
 	display: block;
-	width: 1.5rem;
-	height: .2rem;
+	width: 1rem;
+	height: .1rem;
 	position: relative;
+	border-radius: 10px;
 }
+
+.navicon::before {
+	content: "";
+	display: block;
+	width: 150%;
+	height: 150%;
+	position: absolute;
+	border-radius: 10px;
+	background: var(--color-white);
+	transition: all .2s ease-out;
+}
+
+.navicon::after {
+	content: "";
+	display: block;
+	width: 150%;
+	height: 150%;
+	position: absolute;
+	border-radius: 20px;
+	background: var(--color-white);
+	transition: all .2s ease-out;
+}
+
+.navicon::before {
+	top: .4rem;
+}
+
+.navicon::after {
+	top: -.4rem;
+}
+
 
 /* ================= SECTIONS ===================== */
 .header-container, .section-hero, .section-do, .section-results, .section-contact, .footer {
@@ -153,6 +208,25 @@ header, main, footer {
 }
 
 /* Secondary breakpoint */
+@media screen and (min-width: 768px) {
+	.navbar-menu {
+		display: block;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.menu-icon {
+		display: none;
+	}
+
+	.header-container {
+
+	}
+}
+
 @media screen and (min-width: 768px) and (max-width: 1000px) {
 	.section-hero {
 		background-position: 50%;
