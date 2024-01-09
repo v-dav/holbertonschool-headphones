@@ -54,6 +54,24 @@ header, main, footer {
 /* ================= HEADER & NAVBAR ===================== */
 .header-container {
 	padding-top: 30px;
+	position: absolute;
+}
+
+.nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.navicon {
+	background: var(--color-black);
+	display: block;
+	width: 1.5rem;
+	height: .2rem;
+	position: relative;
 }
 
 /* ================= SECTIONS ===================== */
@@ -65,8 +83,24 @@ header, main, footer {
 .section-hero {
 	background-image: url(../img/background-hero.png);
 	color: var(--color-white);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 35% 40%;
 }
 
+.section-hero .banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 327px;
+}
+
+.section-hero .banner-description {
+	text-align: center;
+	padding-top: 78px;
+	padding-bottom: 106px
+}
 .section-do {
 
 }
@@ -93,6 +127,13 @@ header, main, footer {
 	}
 }
 
+/* Secondary breakpoint */
+@media screen and (min-width: 768px) and (max-width: 1000px) {
+	.section-hero {
+		background-position: 50%;
+	}
+}
+
 /* Desktop */
 @media screen and (min-width: 1000px) {
 	.header-container, .section-hero, .section-do, .section-results, .section-contact, .footer {
@@ -103,5 +144,9 @@ header, main, footer {
 	header, main, footer {
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.section-hero {
+		background-position: 50%;
 	}
 }
