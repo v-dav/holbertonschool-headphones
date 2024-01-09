@@ -57,13 +57,14 @@ header, main, footer {
 	width: 100%;
 	position: absolute;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
+	
 }
 
 .header-logo {
-	margin-right: 130px;
+	flex-basis: 70%;
 }
 
 .navbar-menu {
@@ -78,6 +79,8 @@ header, main, footer {
 .menu-icon {
 	cursor: pointer;
 	user-select: none;
+	padding: 10px 0;
+	display: block;
 }
 
 .nav {
@@ -87,8 +90,10 @@ header, main, footer {
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
+/*=============== NAVICON BUTTON STYLING ================ */
 .navicon {
 	background: var(--color-white);
 	display: block;
@@ -128,6 +133,35 @@ header, main, footer {
 	top: -.4rem;
 }
 
+/*==================== MENU SHOW WHEN NAV MENU BUTTON CLICKED =============== */
+
+.menu-btn:checked + .menu-icon + .header-logo + .navbar-menu {
+	display: block;
+	flex-basis: 160px;
+}
+
+.menu-btn:checked + .menu-icon + .header-logo + .navbar-menu > .nav {
+	max-height: 100%;
+	overflow: inherit;
+}
+
+/*========== MENU BUTTON ANIMATION ============*/
+
+.menu-btn:checked + .menu-icon .navicon {
+	background: transparent;
+}
+
+.menu-btn:checked + .menu-icon .navicon::before {
+	transform: rotate(45deg);
+}
+
+.menu-btn:checked + .menu-icon .navicon::after {
+	transform: rotate(-45deg);
+}
+
+.menu-btn:checked + .menu-icon .navicon::before, .menu-btn:checked + .menu-icon .navicon::after {
+	top: 0;
+}
 
 /* ================= SECTIONS ===================== */
 .header-container, .section-hero, .section-do, .section-results, .section-contact, .footer {
