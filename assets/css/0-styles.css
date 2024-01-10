@@ -1,7 +1,9 @@
 /* ================= NORMALIZE CSS =============== */
+
 @import url(./normalize.css);
 
 /* ================= RESPONSIVE SETTINGS =============== */
+
 *, *::before, *::after {
 	box-sizing: border-box;
 }
@@ -13,6 +15,7 @@ img {
 }
 
 /* ================= FONTS ============================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@100;400;700&display=swap');
 
 
@@ -36,7 +39,7 @@ img {
 
 }
 
-/* ================= HELPERS =========================== */
+/* ================= HELPERS & LAYOUT =========================== */
 
 html {
 	scroll-behavior: smooth;
@@ -44,6 +47,11 @@ html {
 
 a {
 	text-decoration: none;
+	color: var(--color-white);
+}
+
+a:active, a:hover {
+	color: var(--links-hover-active-color);
 }
 
 header, main, footer {
@@ -52,6 +60,7 @@ header, main, footer {
 }
 
 /* ================= HEADER & NAVBAR ===================== */
+
 header {
 	position: relative;
 }
@@ -95,6 +104,13 @@ header {
 	display: flex;
 	flex-direction: column;
 	overflow: hidden;
+}
+
+.nav-item {
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 700;
+	color: var(--color-white);
+	font-size: 16px;
 }
 
 /*=============== NAVICON BUTTON STYLING ================ */
@@ -149,6 +165,10 @@ header {
 	overflow: inherit;
 }
 
+.menu-btn:checked + .menu-icon + .header-logo + .navbar-menu > .nav > .nav-item {
+	padding-top: 30px;
+}
+
 /*========== MENU BUTTON ANIMATION ============*/
 
 .menu-btn:checked + .menu-icon .navicon {
@@ -194,9 +214,7 @@ header {
 	padding-top: 78px;
 	padding-bottom: 106px
 }
-.section-do {
 
-}
 
 .section-results {
 	background-image: url(../img/background-results.png);
@@ -245,24 +263,50 @@ header {
 	}
 }
 
-/* Secondary breakpoint */
+/* Secondary breakpoints */
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+	.header-logo {
+		flex-basis: 65%;
+	}
+
+	.menu-icon {
+		flex-basis: 10%;
+	}
+}
+
 @media screen and (min-width: 768px) {
 	.navbar-menu {
 		display: block;
+		flex: initial;
 	}
 
 	.nav {
 		display: flex;
 		flex-direction: row;
+		justify-content: space-between;
+		height: 30px;
 	}
 
 	.menu-icon {
 		display: none;
 	}
 
-	.header-container {
-
+	.header-logo {
+		flex-basis: auto;
 	}
+
+	.nav-item {
+		font-size: 12px;
+		position: relative;
+		align-self: center;
+		top: 7px;
+	}
+
+	.navbar-menu .nav .nav-item+.nav-item {
+		margin-left: 40px;
+	}
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
@@ -273,7 +317,7 @@ header {
 
 /* Desktop */
 @media screen and (min-width: 1000px) {
-	.header-container, .section-hero, .section-do, .section-results, .section-contact, .footer {
+	.section-hero, .section-do, .section-results, .section-contact, .footer {
 		padding-left: 200px;
 		padding-right: 200px;
 	}
