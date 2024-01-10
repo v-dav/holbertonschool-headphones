@@ -207,14 +207,35 @@ header {
 	justify-content: center;
 	align-items: center;
 	padding-top: 327px;
+	font-family: "Source Sans 3", sans-serif;
+	font-weight: 700;
+	text-align: center;
 }
 
 .section-hero .banner-description {
 	text-align: center;
 	padding-top: 78px;
-	padding-bottom: 106px
+	padding-bottom: 106px;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 16px;
+	line-height: 2em;
+	font-weight: 400;
 }
 
+.section-hero .banner h1 {
+	font-size: 30px;
+	line-height: 1.5em;
+	margin-bottom: 0;
+	text-justify: auto;
+}
+
+.section-hero .banner p {
+	font-size: 16px;
+	line-height: 1.5em;
+	padding: 0 40px;
+	margin-top: 0;
+	margin-bottom: 2rem;
+}
 
 .section-results {
 	background-image: url(../img/background-results.png);
