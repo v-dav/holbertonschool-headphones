@@ -59,6 +59,10 @@ header, main, footer {
 	width: 100%;
 }
 
+body {
+	font-family: "Source Sans 3", sans-serif;
+}
+
 /* ================= HEADER & NAVBAR ===================== */
 
 header {
@@ -193,6 +197,8 @@ header {
 	padding-right: 20px;
 }
 
+/*Section Hero*/
+
 .section-hero {
 	background-image: url(../img/background-hero.png);
 	color: var(--color-white);
@@ -253,6 +259,58 @@ header {
 	opacity: 0.9;
 	cursor: pointer;
 }
+
+/*Section Do Section*/
+
+.do-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.do-item {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+	padding: 0 40px;
+	flex-basis: 100%;
+}
+
+.do-description {
+	margin-top: 100px;
+}
+
+.do-description h1 {
+	font-size: 32px;
+	font-weight: 600;
+}
+
+.do-container p {
+	font-size: 16px;
+	line-height: 2em;
+	font-weight: 400;
+}
+
+.do-item h2 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.do-item h2 + p {
+	font-size: 14px;
+}
+
+.four-do-items {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*Section Results*/
 
 .section-results {
 	background-image: url(../img/background-results.png);
@@ -345,6 +403,14 @@ header {
 		margin-left: 40px;
 	}
 
+	.four-do-items {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.do-item {
+		flex-basis: 50%;
+	}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1000px) {
@@ -355,7 +421,7 @@ header {
 
 /* Desktop */
 @media screen and (min-width: 1000px) {
-	.section-hero, .section-do, .section-results, .section-contact, .footer {
+	.section-hero, .section-results, .section-contact, .footer {
 		padding-left: 200px;
 		padding-right: 200px;
 	}
@@ -371,5 +437,22 @@ header {
 
 	.section-results {
 		background-size: 100%;
+	}
+
+	.four-do-items {
+		flex-wrap: nowrap;
+	}
+
+	.do-item.do-description {
+		padding: 0 125px;
+	}
+
+	.do-item {
+		flex-basis: 25%;
+		padding: 0;
+	}
+
+	.do-item + .do-item {
+		margin-left: 40px;
 	}
 }
